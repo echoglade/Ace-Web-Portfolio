@@ -7,6 +7,12 @@ export const NAV_ITEMS = [
   ["contact", "Contact"],
 ];
 
+// Graphic project images (imported so Vite packs them)
+import marcialAdv from "../assets/graphics_project/Marcial advocacy poster.webp";
+import marcialBanner1 from "../assets/graphics_project/Marcial banner (1).webp";
+import marcialBanner from "../assets/graphics_project/Marcial banner.webp";
+import marcialWomens from "../assets/graphics_project/Marcial womens month creation.webp";
+
 /* ─── PROJECTS ──────────────────────────────────────────────────────────────── */
 export const PROJECTS = [
   {
@@ -16,6 +22,7 @@ export const PROJECTS = [
     title: "Neon Pulse — Brand Film",
     desc: "Cinematic brand film capturing raw energy for a streetwear label. Precision cuts and moody colour grading.",
     tools: ["premiere", "davinciresolve", "aftereffects"],
+    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/0H3hIOstWAQ?si=XUf4HnkTj8LfTGDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     color: "#3b82f6",
     bg: "linear-gradient(135deg,rgba(59,130,246,.14),rgba(59,130,246,.04))",
   },
@@ -25,27 +32,30 @@ export const PROJECTS = [
     cat: "Video Editing",
     title: "Documentary: The Drift",
     desc: "Award-nominated 26-min short on underground car culture. Intimate storytelling, brutal pace.",
-    tools: ["premiere", "davinciresolve"],
+    tools: ["capcut", "davinciresolve", "chatgpt", "jitter", "paper animator", "elevenlabs"],
+    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Q-EtDv3oWso?si=ZKC3pH6PofjGRlcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     color: "#f97316",
     bg: "linear-gradient(135deg,rgba(249,115,22,.14),rgba(249,115,22,.04))",
   },
   {
     id: 3,
-    f: "photo",
-    cat: "Photography",
-    title: "APEX — Editorial Shoot",
-    desc: "Premium editorial series for a fitness brand — studio and on-location with full retouching pipeline.",
-    tools: ["lightroom", "photoshop"],
+    f: "video",
+    cat: "Video Editing",
+    title: "Short Film — Hanggang kailan ang kakulanggna?",
+    desc: "A cinematic short film with dark tones that portrays the emotional struggles of a child and mother facing financial hardship, enhanced by dramatic background music.",
+    tools: ["capcut", "davinciresolve", "chatgpt", "jitter", "paper animator", "elevenlabs"],
+    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2jDjXRaS3xk?si=UAoNMI6LKuOo0c28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     color: "#8b5cf6",
     bg: "linear-gradient(135deg,rgba(139,92,246,.14),rgba(139,92,246,.04))",
   },
   {
     id: 4,
-    f: "photo",
-    cat: "Photography",
+    f: "video",
+    cat: "Video Editing",
     title: "Architecture in Light",
     desc: "Long-form architectural photography project across 8 cities — form, shadow, material, and silence.",
     tools: ["lightroom", "photoshop"],
+    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lI9pemT9MM0?si=05sbwkGL_Woi-fiW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     color: "#06b6d4",
     bg: "linear-gradient(135deg,rgba(6,182,212,.14),rgba(6,182,212,.04))",
   },
@@ -53,9 +63,10 @@ export const PROJECTS = [
     id: 5,
     f: "graphic",
     cat: "Graphic Design",
-    title: "LUMINA — Album Artwork",
-    desc: "Immersive visual world for an indie electronic album — sleeve, streaming assets, and OOH campaign.",
-    tools: ["photoshop", "illustrator"],
+    title: "Poster — Gasolina",
+    desc: "This advocacy poster features a single cinematic image with deep meaning, using cinematic color grading, lighting, and composition to create a dramatic and emotional atmosphere that tells a powerful story and expresses creativity and perspective .",
+    tools: ["canva", "autosketch"],
+    img: marcialAdv,
     color: "#06b6d4",
     bg: "linear-gradient(135deg,rgba(6,182,212,.14),rgba(6,182,212,.04))",
   },
@@ -63,9 +74,32 @@ export const PROJECTS = [
     id: 6,
     f: "graphic",
     cat: "Graphic Design",
-    title: "SOLSTICE — Poster Series",
-    desc: "12-piece limited-edition poster series. Screen-print aesthetic with digital compositing and hand-drawn elements.",
-    tools: ["illustrator", "photoshop", "figma"],
+    title: "ESPORTS — banner",
+    desc: "This poster uses cinematic visuals, dark tones, and dramatic lighting to promote respect for women and raise awareness about the harmful effects of sexism, disrespect, and objectification.",
+    tools: ["canva"],
+    img: marcialBanner1,
+    color: "#f97316",
+    bg: "linear-gradient(135deg,rgba(249,115,22,.14),rgba(249,115,22,.04))",
+  },
+  {
+    id: 7,
+    f: "graphic",
+    cat: "Graphic Design",
+    title: "ESPORTS — banner",
+    desc: "Gaming poster highlights esports and teamwork in Mobile Legends. It uses red tones and dramatic effects for an energetic, competitive feel.",
+    tools: ["autosketch", "capcut", "chatgpt"],
+    img: marcialBanner,
+    color: "#f97316",
+    bg: "linear-gradient(135deg,rgba(249,115,22,.14),rgba(249,115,22,.04))",
+  },
+  {
+    id: 8,
+    f: "graphic",
+    cat: "Graphic Design",
+    title: "POSTER — Women's Month",
+    desc: "This poster promotes respect for women and responsible speech through a cinematic image. It uses dark tones, lighting, and color grading for a strong emotional effect",
+    tools: ["canva"],
+    img: marcialWomens,
     color: "#f97316",
     bg: "linear-gradient(135deg,rgba(249,115,22,.14),rgba(249,115,22,.04))",
   },
@@ -81,13 +115,15 @@ export const TOOLS = [
   { key: "alignmotion",    name: "Align Motion",    where: "Video Editing", gr: "linear-gradient(135deg,#ff7eb6,#ff65a3)" },
   { key: "lightroom",      name: "Lightroom",       where: "Photo Color Grading", gr: "linear-gradient(135deg,#4481eb,#04befe)" },
   { key: "chatgpt",        name: "ChatGPT",         where: "Research", gr: "linear-gradient(135deg,#0ea5a4,#06b6d4)" },
-  { key: "gemini",         name: "Gemini",          where: "Generate Elements", gr: "linear-gradient(135deg,#f97316,#f59e0b)" },
+  { key: "gemini",         name: "Gemini",          where: "Generate Elements", gr: "linear-gradient(135deg,#9ca3ff,#6b7280)" },
+  { key: "paperanimator",  name: "Paper Animator",  where: "Animation", gr: "linear-gradient(135deg,#f97316,#f59e0b)" },
+  { key: "jitter",         name: "Jitter",          where: "Video Elements", gr: "linear-gradient(135deg,#9ca3ff,#6b7280)" },
 ];
 
 /* ─── SERVICES ──────────────────────────────────────────────────────────────── */
 export const SERVICES = [
   { key: "premiere",       title: "Video Editing",   desc: "Cinematic storytelling, seamless pacing, colour grading, and audio mixing — for brand films, docs, and reels.", color: "#3b82f6" },
-  { key: "lightroom",      title: "Photography Edit", desc: "Professional retouching and compositing — editorial portraits, product shots, and architectural photography.", color: "#4481eb" },
+  { key: "lightroom",      title: "Photo Editing", desc: "Professional retouching and compositing — editorial portraits and product shots.", color: "#4481eb" },
   { key: "illustrator",    title: "Graphic Design",   desc: "Visual communication at its sharpest — posters, album art, editorial layouts, and identity collateral.", color: "#06b6d4" },
   { key: "davinciresolve", title: "Colour Grading",   desc: "Cinematic colour science for video and stills. Emotionally driven, consistent, broadcast-ready looks.", color: "#ff5f57" },
   { key: "aftereffects",   title: "VFX & Titles",     desc: "Motion titles, visual effects, and kinetic typography that elevate storytelling and add a premium finish.", color: "#8b5cf6" },
@@ -112,7 +148,6 @@ export const CONTACT_INFO = [
 export const PROJECT_FILTERS = [
   { k: "all",     l: "All Work" },
   { k: "video",   l: "Video Editing" },
-  { k: "photo",   l: "Photography" },
   { k: "graphic", l: "Graphic Design" },
 ];
 

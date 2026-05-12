@@ -7,7 +7,7 @@ export function Footer() {
     <footer>
       <div className="fin">
         <div>
-          <div className="flogo">ACE MARCIAL</div>
+          <div className="flogo">JESIE MARCIAL</div>
           <div className="fcp">©2026 Ace Marcial · All rights reserved</div>
         </div>
 

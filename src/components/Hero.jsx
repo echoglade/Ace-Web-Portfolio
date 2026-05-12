@@ -1,6 +1,6 @@
 import { scrollTo } from "../utils";
 
-const ROLES = ["Video Editor", "Graphic Designer", "Photographer"];
+const ROLES = ["Video Editor", "Graphic Designer"];
 
 export function Hero() {
   return (

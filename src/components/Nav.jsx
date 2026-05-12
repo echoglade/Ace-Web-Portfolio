@@ -10,7 +10,7 @@ export function Nav({ scrolled, theme, onToggleTheme }) {
           className="nl"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          ACE MARCIAL
+          JESIE MARCIAL
         </div>
 
         <div className="nls">

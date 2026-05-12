@@ -133,10 +133,10 @@ export function GlobalStyles({ theme: th }) {
     .hpilldot{width:5px;height:5px;border-radius:50%;background:var(--cy)}
     .hsub{font-size:clamp(13px,1.3vw,16px);color:var(--mu);max-width:460px;margin:18px auto 0;line-height:1.8;font-weight:400;animation:fu .8s .22s ease both}
     .hbtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:40px;animation:fu .8s .3s ease both}
-    .hscroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+    .hscroll{position:absolute;bottom:32px;left:50%;transform:translate(-50%,0);
       display:flex;flex-direction:column;align-items:center;gap:9px;
       color:var(--mu);font-size:9px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;
-      animation:fu 1s .5s ease both;cursor:none}
+      animation:fu 1s .5s ease both;cursor:none;z-index:3;width:auto}
     .sline{width:1.5px;height:40px;background:linear-gradient(to bottom,var(--pu),transparent);animation:pl 2s ease infinite}
 
     /* about */
@@ -190,6 +190,11 @@ export function GlobalStyles({ theme: th }) {
       letter-spacing:1.5px;text-transform:uppercase;color:var(--bl);text-decoration:none;cursor:none;
       transition:gap .2s,color .2s}
     .plink:hover{gap:10px;color:var(--cy)}
+
+    /* image modal / lightbox */
+    .image-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.8);z-index:2000}
+    .image-modal-img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.6)}
+    .image-modal-close{position:fixed;top:28px;right:28px;background:transparent;border:1px solid var(--bd);color:var(--tx);padding:8px 12px;border-radius:6px;font-size:18px;cursor:none}
 
     /* tools */
     #tools{padding:120px 0;background:linear-gradient(180deg,transparent,rgba(59,130,246,.04) 50%,transparent)}
@@ -274,6 +279,7 @@ export function GlobalStyles({ theme: th }) {
       .sg{grid-template-columns:1fr}
       .fin{flex-direction:column;align-items:flex-start}
       .hbtns{flex-direction:column;align-items:center}
+      .hscroll{bottom:28px}
     }
   `}</style>
   );
