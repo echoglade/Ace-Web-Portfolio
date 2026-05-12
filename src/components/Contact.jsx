@@ -6,8 +6,8 @@ import { SOCIALS, CONTACT_INFO } from "../data";
 import emailjs from "@emailjs/browser";
 
 const FORM_FIELDS = [
-  { id: "name",    label: "Your Name",      placeholder: "Alex Johnson" },
-  { id: "email",   label: "Email Address",  placeholder: "alex@company.com" },
+  { id: "name",    label: "Your Name",      placeholder: "What's your name?" },
+  { id: "email",   label: "Email Address",  placeholder: "What's your email?" },
   { id: "project", label: "Project Type",   placeholder: "Video / Photography / Design" },
 ];
 
@@ -86,7 +86,7 @@ function ContactForm() {
             return;
           }
 
-          const toEmail = "jesiemarcial1@gmail.com";
+          const toEmail = "jessie162004@gmail.com";
 
           // EmailJS config from env: VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY
           const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
